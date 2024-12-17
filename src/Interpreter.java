@@ -45,6 +45,7 @@ public class Interpreter {
             }
         }
 
+
         tokens.add(new Token("eof", ""));
 
         return tokens;
@@ -130,7 +131,7 @@ public class Interpreter {
         {
             throw new Exception ( "Error on line: " + i +" Syntax Error: Expecting argument");
         }
-            else {
+        else {
             throw new Exception("Compilation Error on line: " + i +" Unexpected token: " + pos.current.value);
         }
     }
@@ -166,4 +167,3 @@ public class Interpreter {
     }
 
 }
-
